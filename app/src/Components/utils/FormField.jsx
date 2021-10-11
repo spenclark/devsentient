@@ -1,24 +1,27 @@
 import React from "react"
-import {Grid, MenuItem, TextField} from "@material-ui/core";
+import { MenuItem, Grid, TextField} from "@mui/material";
 
-export const TextFormField = props => {
+export const FormField = props => {
     // reuseable form component
     return (
-        <Grid item xs={props.xs} sm={props.sm}>
+        <Grid item >
             <TextField
                 fullWidth
                 hiddenLabel={props.hiddenLabel}
-                select={props.select}
-                multiline={props.multiline}
-                rows={props.rows}
-                variant={props.variant}
+                placeholder={props.placeholder}
                 label={props.label}
                 type={props.type}
                 name={props.name}
-                placeholder={props.label}
-                InputLabelProps={props.inputLabel}
-                value={props.value[props.name]}
-                onChange={props.handleChanges}
+                select={props.select}
+                data={props.data}
+                sm={props.sm}
+                inputLabel={props.inputLabel}
+                multiline={props.multiline}
+                variant={props.variant}
+                rows={props.rows}
+                InputLabelProps={{shrink: true}}
+                // value={props.value[props.name]}
+                // onChange={props.handleChanges}
             >
                 {props.data.map(option => (
                     <MenuItem key={option.value} value={option.value}>
@@ -26,6 +29,7 @@ export const TextFormField = props => {
                     </MenuItem>
                 ))}
             </TextField>
-        </Grid>
+         </Grid>
+        
     )}
     ;

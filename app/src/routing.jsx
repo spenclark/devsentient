@@ -22,7 +22,6 @@ export const routes = [
 
 
 export default function Routing({props}) {
-    console.log(props)
   return (
     <Router>
         <div>
