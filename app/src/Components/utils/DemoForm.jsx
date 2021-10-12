@@ -100,10 +100,10 @@ const formValuesShort = [
     },
 ]
 
-export default function DemoForm(type) {
+export default function DemoForm({type}) {
     const [formType, setFormType] = useState([])
 
-    const handleRender = ({type}) => {
+    const handleRender = (type) => {
         if(type === true) {
             setFormType([...formValuesShort])
             
@@ -141,7 +141,7 @@ export default function DemoForm(type) {
                 })}
                 <Grid> 
                     <Button>
-                        {type === true ? `See DevSentient` : `Schedule Demo`}
+                        {type === false ? `Schedule Demo` : `See DevSentient`}
                     </Button>
                 </Grid>
         </Grid>
