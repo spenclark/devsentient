@@ -4,8 +4,21 @@
 import React, {useState, useEffect} from "react"
 import {FormField} from "./FormField"
 import Grid from "@mui/material/Grid"
-import Button from "@mui/material/Button"
+import {makeStyles } from "@mui/styles"
 
+const useStyles = makeStyles(theme => ({
+    button: {
+        backgroundImage: `linear-gradient(to right, ${theme.palette.primary.primaryGold} , ${theme.palette.primary.secondaryGold})`,
+        color: theme.palette.primary.main, 
+        fontSize: "14px",
+        fontWeight: "600",
+        width: "100%",
+        border: "none",
+        borderRadius: "2px",
+        marginTop: "8px",
+        padding: "20px 0"
+    },
+}))
 const formValuesLong = [
     {
         placeholder: "Full Name",
@@ -95,12 +108,13 @@ const formValuesShort = [
         label: "Email Address",
         placeholder: "What’s your email?",
         variant: "filled",
-        type: "text",
+        type: "email",
         data: [],
     },
 ]
 
 export default function DemoForm({type}) {
+    const classes = useStyles()
     const [formType, setFormType] = useState([])
 
     const handleRender = (type) => {
@@ -118,6 +132,7 @@ export default function DemoForm({type}) {
 
     return (
         <Grid>
+            <Grid >
             {formType.map(data => {
                     return(
                         <FormField 
@@ -139,10 +154,11 @@ export default function DemoForm({type}) {
                         />
                         )
                 })}
+                </Grid>
                 <Grid> 
-                    <Button>
+                    <button className={classes.button}>
                         {type === false ? `Schedule Demo` : `See DevSentient`}
-                    </Button>
+                    </button>
                 </Grid>
         </Grid>
        

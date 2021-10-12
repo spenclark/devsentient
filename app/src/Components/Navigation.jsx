@@ -4,6 +4,7 @@ import {makeStyles} from "@mui/styles"
 const useStyles = makeStyles(theme => ({
     navBar: {
         width: "100%",
+        padding: "12px 0",
         background: theme.palette.primary.main
     },
     bar: {
