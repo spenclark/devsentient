@@ -8,7 +8,7 @@ import { ThemeProvider, createTheme } from "@mui/material/styles";
 const theme = createTheme({
   breakpoints: {
     values: {
-      xs: 0,
+      xs: 375,
       sm: 600,
       md: 900,
       lg: 1200,
@@ -19,10 +19,12 @@ const theme = createTheme({
     primary: {
       main: "#3E0E40",
       secondary: "#3D0540",
-      primaryWhite: "#fffff",
+      bold: "#9F0C64",
+      primaryWhite: "#ffffff",
       secondaryWhite: "#EEEEEE",
-      primaryGold: "#DFAD2C",
-      secondaryGold: "#DBBE56",
+      primaryGold: "#dba10d",
+      secondaryGold: "#DFAD2C",
+      contrastText: "#343434",
     },
   },
 });

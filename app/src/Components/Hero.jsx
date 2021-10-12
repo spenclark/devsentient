@@ -37,7 +37,7 @@ export default function Hero({props}) {
                     </p>
                     </div>
                     <div>
-                    <iframe width="560" height="315" src={props.heroContent.embedLink} title="Grabbed from yt" frameborder="0" allowfullscreen></iframe>
+                    {/* <iframe maxWidth="560" height="auto" src={props.heroContent.embedLink} title="Grabbed from yt" frameborder="0" allowfullscreen></iframe> */}
                     </div>
                 </div>
             </div>
