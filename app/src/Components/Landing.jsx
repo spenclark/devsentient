@@ -1,14 +1,24 @@
 import React from "react"
-import DemoForm from "./utils/DemoForm"
-
+import Hero from "./Hero"
+import Navbar from "./Navigation"
+import {
+    navigationText,
+    heroText,
+    cardElements,
+    CaroselContent,
+    BottomContent,
+  } from "./utils/landingpagedata"
+  
 
 
 
 export default function Landing() {
     return (
         <div> 
-            Landing
-            <DemoForm type={true} />
+            <Navbar props={navigationText}/>
+            <Hero props={heroText} />
+
+
         </div>
     )
 }

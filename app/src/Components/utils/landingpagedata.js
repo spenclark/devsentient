@@ -1,6 +1,7 @@
+import React from "react";
 import LocalShippingIcon from "@mui/icons-material/LocalShipping";
 import FavoriteIcon from "@mui/icons-material/Favorite";
-import AccessAlarmIcon from "@mui/icons-material/AccessAlarm";
+import AccessTimeIcon from "@mui/icons-material/AccessTime";
 import BugReportIcon from "@mui/icons-material/BugReport";
 import AllInclusiveIcon from "@mui/icons-material/AllInclusive";
 import BuildIcon from "@mui/icons-material/Build";
@@ -8,8 +9,10 @@ import ArchitectureIcon from "@mui/icons-material/Architecture";
 // import AccountTreeIcon from '@mui/icons-material/AccountTree';
 import FormatQuoteIcon from "@mui/icons-material/FormatQuote";
 
+// We will use ~ to split elements if needed - beware of this when updating
+
 const navigationText = {
-  logoText: "DevSentient",
+  logoText: "Dev Sentient",
   navItems: [{ title: "Product" }, { title: "Company" }],
   onboardingItems: [
     {
@@ -19,19 +22,20 @@ const navigationText = {
 };
 
 const heroText = {
-  title: `All-in-one platform${(<br />)}for shipping AI products`,
-  subTitle: `DevSentient helps your organization launch and ${(
-    <br />
-  )} scale AI-powered products faster and more reliable.`,
+  title: `All-in-one platform~for shipping AI products`,
+  subTitle: `DevSentient helps your organization launch and~scale AI-powered products faster and more reliably.`,
+  heroContent: {
+    label: "Watch how it works",
+    pricingBenifit: `
+    Start building with DevSentient for free.~Questions?~Contact our sales team
+    `,
+    embedLink: "https://www.youtube.com/embed/WwMSioKHt2E",
+  },
 };
 
 const cardElements = {
-  title: `Workflow software and services${(
-    <br />
-  )}to fuel your AI development start to finish`,
-  subTitle: `One place to manage and scale clusters and pipelines—${(
-    <br />
-  )}optimize production code, and everything in between.`,
+  title: `Workflow software and services~to fuel your AI development start to finish`,
+  subTitle: `One place to manage and scale clusters and pipelines—~optimize production code, and everything in between.`,
   buttonLabel: "See Features",
   cardData: [
     {
@@ -49,7 +53,7 @@ const cardElements = {
       linkName: "Learn More",
     },
     {
-      icon: <AccessAlarmIcon />,
+      icon: <AccessTimeIcon />,
       cardTitle: "Painless deployment and integration",
       cardText:
         "Easily integrate Hyperplane into existing IT infrastructure and SDLC. No lock-in, no regrets.",
@@ -120,7 +124,7 @@ const BottomContent = {
     to: "/",
   },
 };
-
+// Must pump thru elements with html elements thru a function or method otherwise they will print thier type
 export {
   navigationText,
   heroText,
