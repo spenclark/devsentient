@@ -21,7 +21,7 @@ const theme = createTheme({
       secondary: "#3D0540",
       bold: "#9F0C64",
       primaryWhite: "#ffffff",
-      secondaryWhite: "#EEEEEE",
+      secondaryWhite: "#bfbfbf",
       primaryGold: "#dba10d",
       secondaryGold: "#DFAD2C",
       contrastText: "#343434",
