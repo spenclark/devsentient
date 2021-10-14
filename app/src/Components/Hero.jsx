@@ -1,4 +1,4 @@
-import React from "react"
+import React, {useState} from "react"
 import DemoForm from "./utils/DemoForm"
 import {makeStyles} from "@mui/styles"
 import { Grid } from "@mui/material"
@@ -16,7 +16,7 @@ const useStyles = makeStyles(theme => ({
     root: {
         width: "80%",
         height: "85vh",
-        padding: "0",
+        padding: "30px 0",
         margin: "auto",
         display: "flex",
         flexDirection: "row",
@@ -104,7 +104,7 @@ const useStyles = makeStyles(theme => ({
         display: "flex",
         marginBottom: "10px",
         marginTop: "10px",   
-        width: "90%"
+        width: "80%"
     },
     contentLabel: {
         color: theme.palette.primary.secondaryWhite,
@@ -138,12 +138,17 @@ const useStyles = makeStyles(theme => ({
             
         }
     },
-
+    toggleDiv: {
+        display: "flex", justifyContent: "center", margin: "auto", flexDirection: "column"
+    },
+    hiddenDiv: {
+        display: "none"
+    }
 }))
 
 export default function Hero({props}) {
     const classes = useStyles()
-    
+    const [hidden, setHidden] = useState(true)
     const [title, titleBr] = props.title.split('~');
     const [subTitle, subTitleBr] = props.subTitle.split("~")
     const [hook, questions, contact] = props.heroContent.pricingBenifit.split("~")
@@ -170,8 +175,7 @@ export default function Hero({props}) {
                         <DemoForm type={true}/>
                     </div>
                 </div>
-                <div className={classes.contentDiv}>
-                    <div style={{ display: "flex", justifyContent: "center", margin: "auto", flexDirection: "column"}}>
+                   {hidden ? <p onClick={() => setHidden(!hidden)} style={{color: "white", width: "50%", fontSize: "12px"}}>Click to toggle content</p> :  <div className={classes.contentDiv}> <div onClick={() => setHidden(!hidden)} className={classes.toggleDiv}>
                         <Grid container xs={12}className={classes.labelBox}>
                             <Grid item sm={12 } md={5} className={classes.contentLabel}>
                                 <h3>{props.heroContent.label}</h3>
@@ -186,11 +190,15 @@ export default function Hero({props}) {
                                 </p>
                             </Grid>
                         </Grid>
-                        <div style={{width: "90%", margin: "auto", display: "flex"}}>
+                         <div style={{width: "90%", margin: "auto", display: "flex"}}>
                             <iframe className={classes.img} src={props.heroContent.embedLink} title="Grabbed from yt" frameborder="0" allowfullscreen></iframe>
                         </div>
                     </div>
-                </div>
+
+                    </div>
+                   }
+                   
+                
             </div>
               {/* Link to hyperlane */}
               <div className={classes.transitDiv}>
