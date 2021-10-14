@@ -39,9 +39,35 @@ const useStyles = makeStyles(theme => ({
     },
     cardDiv: {
         background: theme.palette.primary.primaryWhite,
-        margin: "10px",
+        borderRadius: "3px",
+        padding: "12px",
+        fontSize: "12px",
+        display: "flex",
+        justifyContent: "space-between",
+        alignContent: "space-between",
+        height: "90%",
+        flexDirection: "column",
+        margin: "7px"
         
     },
+    parentDiv: {
+        display: "flex",
+        padding: `0 ${theme.spacing(12)}`,
+        [theme.breakpoints.down("md")]: {
+            padding: `0 ${theme.spacing(6)}`
+        },
+    },
+    cardFeatureDiv: {
+        background: theme.palette.primary.primaryWhite,
+        borderRadius: "3px",
+        padding: "12px",
+        fontSize: "12px",
+        display: "flex",
+        height: "90%",
+        flexDirection: "column",
+        margin: "7px"
+    },
+
 }))
 export default function Cards({props}) {
     const classes = useStyles()
@@ -50,7 +76,7 @@ export default function Cards({props}) {
 
     return (
         <Grid container xs={12} className={classes.root}>
-            <Grid container item xs={12} className={classes.titleDiv}>
+            <Grid className={classes.titleDiv} container item xs={12} >
             {/* title div */}
                 <div className={classes.title}>
                     {splicedTitle}
@@ -67,37 +93,37 @@ export default function Cards({props}) {
                     {props.buttonLabel}
                </p>
             </Grid>
-            <Grid container item xs={10} style={{margin: "auto", padding: "10px"}}>
+            <Grid container item xs={12} className={classes.parentDiv}>
                 {/* Card divs */}
                 {/* defauly grid layout xs=12 sm={6} md={3 ? type leader} */}
                
                 {props.cardData.map((data) => {  
                     return (
-                        <Grid className={classes.cardDiv} item key={data.cardTitle} xs={12} sm={6} md={3}>
-                            <div style={{padding: "15px", fontSize: "12px"}}>
+                        <Grid item key={data.cardTitle} xs={12} sm={6} md={3}>
+                            <div className={classes.cardDiv}>
                                 <div style={{ color: "#dba10d"}}>
                                     {data.icon}
                                 </div>
-                                <p style={{fontWeight: "600", color: "#3D0540"}}> 
+                                <div style={{fontWeight: "600", color: "#3D0540"}}> 
                                     {data.cardTitle}
-                                </p>
-                                <p>
+                                </div>
+                               <div>
                                     {data.cardText}
-                                </p>
+                                    </div>
                             </div>
                         </Grid>
                 )})}
-                <Grid className={classes.cardDiv} item xs={12} sm={6} md={6}>
-                    <div style={{margin: "15px", fontSize: "12px"}}>
+                <Grid item xs={12} sm={12} md={6}>
+                    <div className={classes.cardFeatureDiv}>
                         <div style={{ color: "#dba10d"}}>
                             {props.featuredCard.icon}
                         </div>
-                         <p style={{fontWeight: "600", color: "#3D0540"}}> 
+                         <div style={{fontWeight: "600", color: "#3D0540"}}> 
                             {props.featuredCard.cardTitle}
-                        </p>
-                        <p>
+                            </div>
+                       <div>
                             {props.featuredCard.cardText}
-                        </p>
+                            </div>
                     </div>
                 </Grid>
             </Grid>
