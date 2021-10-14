@@ -212,7 +212,7 @@ export default function Hero({props}) {
                     </div>
                 </div>
         </div>
-
+    
     )
 }
 

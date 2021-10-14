@@ -45,7 +45,7 @@ const useStyles = makeStyles(theme => ({
         display: "flex",
         justifyContent: "space-between",
         alignContent: "space-between",
-        height: "90%",
+        height: "92%",
         flexDirection: "column",
         margin: "7px"
         
@@ -63,11 +63,14 @@ const useStyles = makeStyles(theme => ({
         padding: "12px",
         fontSize: "12px",
         display: "flex",
-        height: "90%",
+        height: "92%",
         flexDirection: "column",
-        margin: "7px"
+        margin: "7px",
+        justifyContent: "space-between",
     },
-
+    link: {
+        fontSize: "12px", textDecoration: "underline", textDecorationColor: theme.palette.primary.primaryGold, color: theme.palette.primary.contrast, fontWeight: "600"
+    }
 }))
 export default function Cards({props}) {
     const classes = useStyles()
@@ -109,7 +112,10 @@ export default function Cards({props}) {
                                 </div>
                                <div>
                                     {data.cardText}
-                                    </div>
+                                </div>
+                                <div className={classes.link}>
+                                    {data.linkName}
+                                </div>
                             </div>
                         </Grid>
                 )})}
@@ -124,6 +130,9 @@ export default function Cards({props}) {
                        <div>
                             {props.featuredCard.cardText}
                             </div>
+                            <div className={classes.link}>
+                                    {props.featuredCard.linkName}
+                                </div>
                     </div>
                 </Grid>
             </Grid>

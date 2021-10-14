@@ -108,7 +108,7 @@ const cardElements = {
   },
 };
 
-const CaroselContent = {
+const CarouselContent = {
   title: "What our partners say about us",
   icon: <FormatQuoteIcon />,
   data: [
@@ -147,7 +147,7 @@ export {
   navigationText,
   heroText,
   cardElements,
-  CaroselContent,
+  CarouselContent,
   BottomContent,
 };
 
