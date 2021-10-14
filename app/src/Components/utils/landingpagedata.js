@@ -45,6 +45,8 @@ const cardElements = {
         "Scale up and customize clusters with a single line of code. Avoid costly scale-up migrations later on. ",
       linkName: "Learn More",
       md: 3,
+      xs: 12,
+      sm: 6,
     },
     {
       icon: <FavoriteIcon />,
@@ -53,6 +55,8 @@ const cardElements = {
         "Code, create pipelines, and deploy API endpoints with Jupyter notebooks, Python scripts, and built-in data science libraries.",
       linkName: "Learn More",
       md: 3,
+      xs: 12,
+      sm: 6,
     },
     {
       icon: <AccessTimeIcon />,
@@ -61,6 +65,8 @@ const cardElements = {
         "Easily integrate Hyperplane into existing IT infrastructure and SDLC. No lock-in, no regrets.",
       linkName: "Learn More",
       md: 3,
+      xs: 12,
+      sm: 6,
     },
     {
       icon: <BugReportIcon />,
@@ -69,6 +75,8 @@ const cardElements = {
         "Track and view results of every deployed job. Pull and re-run previous jobs in a development environment for rapid debugging.",
       linkName: "Learn More",
       md: 3,
+      xs: 12,
+      sm: 6,
     },
     {
       icon: <AllInclusiveIcon />,
@@ -77,6 +85,8 @@ const cardElements = {
         "Leave cluster configurations to us. Hyperplane  will automatically choose the best configurations within your specified resource limits.",
       linkName: "Learn More",
       md: 3,
+      xs: 12,
+      sm: 6,
     },
     {
       icon: <BuildIcon />,
@@ -85,16 +95,17 @@ const cardElements = {
         "Avoid vendor lock-in and don't restrict yourself. Enjoy both CPU and GPU support for popular frameworks like Dask, PyTorch, TensorFlow, MXNet, Rapids, Ray, Modin and others.",
       linkName: "Learn More",
       md: 3,
-    },
-    {
-      icon: <ArchitectureIcon />,
-      cardTitle: "DevSentient Services",
-      cardText:
-        "Still unsure? We can help define a strategy for operational AI Identifying high ROI use cases for AI Deploying and integrating the Hyperplane platform Co-researching and co-developing AI algorithms and models ",
-      linkName: "Learn More",
-      md: 6,
+      xs: 12,
+      sm: 6,
     },
   ],
+  featuredCard: {
+    icon: <ArchitectureIcon />,
+    cardTitle: "DevSentient Services",
+    cardText:
+      "Still unsure? We can help define a strategy for operational AI Identifying high ROI use cases for AI Deploying and integrating the Hyperplane platform Co-researching and co-developing AI algorithms and models ",
+    linkName: "Learn More",
+  },
 };
 
 const CaroselContent = {
