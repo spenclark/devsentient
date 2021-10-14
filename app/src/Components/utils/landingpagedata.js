@@ -44,6 +44,7 @@ const cardElements = {
       cardText:
         "Scale up and customize clusters with a single line of code. Avoid costly scale-up migrations later on. ",
       linkName: "Learn More",
+      md: 3,
     },
     {
       icon: <FavoriteIcon />,
@@ -51,6 +52,7 @@ const cardElements = {
       cardText:
         "Code, create pipelines, and deploy API endpoints with Jupyter notebooks, Python scripts, and built-in data science libraries.",
       linkName: "Learn More",
+      md: 3,
     },
     {
       icon: <AccessTimeIcon />,
@@ -58,6 +60,7 @@ const cardElements = {
       cardText:
         "Easily integrate Hyperplane into existing IT infrastructure and SDLC. No lock-in, no regrets.",
       linkName: "Learn More",
+      md: 3,
     },
     {
       icon: <BugReportIcon />,
@@ -65,6 +68,7 @@ const cardElements = {
       cardText:
         "Track and view results of every deployed job. Pull and re-run previous jobs in a development environment for rapid debugging.",
       linkName: "Learn More",
+      md: 3,
     },
     {
       icon: <AllInclusiveIcon />,
@@ -72,6 +76,7 @@ const cardElements = {
       cardText:
         "Leave cluster configurations to us. Hyperplane  will automatically choose the best configurations within your specified resource limits.",
       linkName: "Learn More",
+      md: 3,
     },
     {
       icon: <BuildIcon />,
@@ -79,13 +84,15 @@ const cardElements = {
       cardText:
         "Avoid vendor lock-in and don't restrict yourself. Enjoy both CPU and GPU support for popular frameworks like Dask, PyTorch, TensorFlow, MXNet, Rapids, Ray, Modin and others.",
       linkName: "Learn More",
+      md: 3,
     },
     {
       icon: <ArchitectureIcon />,
       cardTitle: "DevSentient Services",
       cardText:
-        "Still unsure? We can help Defining a strategy for operational AI Identifying high ROI use cases for AI Deploying and integrating the Hyperplane platform Co-researching and co-developing AI algorithms and models ",
+        "Still unsure? We can help define a strategy for operational AI Identifying high ROI use cases for AI Deploying and integrating the Hyperplane platform Co-researching and co-developing AI algorithms and models ",
       linkName: "Learn More",
+      md: 6,
     },
   ],
 };
@@ -132,3 +139,12 @@ export {
   CaroselContent,
   BottomContent,
 };
+
+// Learn more / still unsure
+// Hyperplane is the ultimate MLOps and AIOps platform, designed to bring the benefits of DevOps to the AI space. Some of the main benefits of using Hyperplane for MLOps are:
+
+// Deployment via GitOps: everything is version controlled. To deploy a solution, simply commit it into the appropriate branch in your git repository.
+// CI/CD: active deployments and pipelines are updated immediately when a change is deployed.
+// Alert on Slack, PagerDuty, email or any other channel.
+// Easily differentiate between development, staging and production by maintaining separate git branches.
+// Benefit from full observability via a rich set of metrics and integration with Prometheus and Grafana.

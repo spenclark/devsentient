@@ -1,5 +1,6 @@
 import React from "react"
 import Hero from "./Hero"
+import Cards from "./Cards"
 import Navbar from "./Navigation"
 import {
     navigationText,
@@ -17,7 +18,7 @@ export default function Landing() {
         <div> 
             <Navbar props={navigationText}/>
             <Hero props={heroText} />
-
+            <Cards props={cardElements} />
 
         </div>
     )
