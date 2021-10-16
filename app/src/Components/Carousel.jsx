@@ -1,4 +1,5 @@
  import React, {useState} from "react"
+ 
 
 export default function Carousel({props}) {
     const dataArr = [
@@ -9,31 +10,41 @@ export default function Carousel({props}) {
     const length = dataArr.length
 
     const handleForward = () => {
-        setShowcase(showcase = length - 1 ? 0: showcase + 1)
+        setShowcase(showcase === length - 1 ? 0: showcase + 1)
     }
 
     const handleBack = () => {
-        setShowcase(showcase = length - 1 ? 0: showcase - 1)
+        setShowcase(showcase === length - 1 ? 0: showcase - 1)
     }
-
-    if (!Array.isArray(props) || props.length <= 0) {
-        return null;
-      }
 
     return (
         <div>  
             {props.icon}
             <div>
                 <div>
-                       {showcase} / {dataArr.length}
-                    <div>
-                        {showcase.endorsement}
-                    </div>
-                    <div>
-                        {showcase.name}
-                        {showcase.title}
-                        {showcase.company}
-                    </div>
+                       {showcase + 1} / {dataArr.length}
+
+                        {dataArr.map((data, i) => {
+                            return (
+                                <div
+                                className={i === showcase ? "selected" : "unselected"}
+                                key={i} >
+                                        {i === showcase && (
+                                            <>
+                                                <div>
+                                                    {data.endorsement}
+                                                </div>
+                                                <div>
+                                                    {data.name}
+                                                    {data.title}
+                                                    {data.company}
+                                                </div>
+                                            </>
+                                        )}
+                                </div>
+                            )
+                        })}
+
                 </div>
             </div>
             <button onClick={() => handleBack()}>
