@@ -1,28 +1,31 @@
-import React, {useState} from "react"
+ import React, {useState} from "react"
 
 export default function Carousel({props}) {
     const dataArr = [
         ...props.data
     ]
-    const [showcase, setShowcase] = useState({
+    
+    const [showcase, setShowcase] = useState(0)
+    const length = dataArr.length
 
-    })
-
-    const handleForward = (i, arr) => {
-        arr.next()
-        console.log()
+    const handleForward = () => {
+        setShowcase(showcase = length - 1 ? 0: showcase + 1)
     }
 
-    const handleBack = (i, arr) => {
-        arr.prev()
+    const handleBack = () => {
+        setShowcase(showcase = length - 1 ? 0: showcase - 1)
     }
+
+    if (!Array.isArray(props) || props.length <= 0) {
+        return null;
+      }
 
     return (
         <div>  
             {props.icon}
             <div>
                 <div>
-                       1 / {dataArr.length}
+                       {showcase} / {dataArr.length}
                     <div>
                         {showcase.endorsement}
                     </div>
@@ -33,10 +36,10 @@ export default function Carousel({props}) {
                     </div>
                 </div>
             </div>
-            <button>
+            <button onClick={() => handleBack()}>
                 Back
             </button>
-            <button>
+            <button onClick={() => handleForward()}>
                 Forward
             </button>
         </div>
