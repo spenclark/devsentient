@@ -150,12 +150,3 @@ export {
   CarouselContent,
   BottomContent,
 };
-
-// Learn more / still unsure
-// Hyperplane is the ultimate MLOps and AIOps platform, designed to bring the benefits of DevOps to the AI space. Some of the main benefits of using Hyperplane for MLOps are:
-
-// Deployment via GitOps: everything is version controlled. To deploy a solution, simply commit it into the appropriate branch in your git repository.
-// CI/CD: active deployments and pipelines are updated immediately when a change is deployed.
-// Alert on Slack, PagerDuty, email or any other channel.
-// Easily differentiate between development, staging and production by maintaining separate git branches.
-// Benefit from full observability via a rich set of metrics and integration with Prometheus and Grafana.

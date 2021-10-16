@@ -203,9 +203,9 @@ export default function Hero({props}) {
               {/* Link to hyperlane */}
               <div className={classes.transitDiv}>
                     <div>
-                        <p style={{fontWeight: "600", fontSize: "12px"}}>
+                        <a style={{fontWeight: "600", fontSize: "12px", textDecoration: "none", color: "inherit"}} href="#features">
                             Introducing Hyperlane
-                        </p>
+                        </a>
                     </div>
                     <div>
                         <KeyboardArrowDownIcon />

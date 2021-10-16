@@ -12,7 +12,7 @@ const useStyles = makeStyles(theme => ({
         display: "flex",
         justifyContent: "center",
         flexDirection: "column",
-        padding: "25px",
+        paddingTop: "25px",
     },
     title: {
         width: "100%",
@@ -52,7 +52,7 @@ const useStyles = makeStyles(theme => ({
     },
     parentDiv: {
         display: "flex",
-        padding: `0 ${theme.spacing(12)}`,
+        padding: `50px ${theme.spacing(12)}`,
         [theme.breakpoints.down("md")]: {
             padding: `0 ${theme.spacing(6)}`
         },
@@ -104,15 +104,17 @@ export default function Cards({props}) {
                     return (
                         <Grid item key={data.cardTitle} xs={12} sm={6} md={3}>
                             <div className={classes.cardDiv}>
-                                <div style={{ color: "#dba10d"}}>
-                                    {data.icon}
-                                </div>
-                                <div style={{fontWeight: "600", color: "#3D0540"}}> 
-                                    {data.cardTitle}
-                                </div>
-                               <div>
-                                    {data.cardText}
-                                </div>
+                   
+                                    <div style={{ color: "#dba10d"}}>
+                                        {data.icon}
+                                    </div>
+                                    <div style={{fontWeight: "600", color: "#3D0540"}}> 
+                                        {data.cardTitle}
+                                    </div>
+                                    <div>
+                                        {data.cardText}
+                                    </div>
+                         
                                 <div className={classes.link}>
                                     {data.linkName}
                                 </div>
@@ -120,7 +122,8 @@ export default function Cards({props}) {
                         </Grid>
                 )})}
                 <Grid item xs={12} sm={12} md={6}>
-                    <div className={classes.cardFeatureDiv}>
+                    <div className={classes.cardFeatureDiv} id="features">
+                        <div>
                         <div style={{ color: "#dba10d"}}>
                             {props.featuredCard.icon}
                         </div>
@@ -129,10 +132,11 @@ export default function Cards({props}) {
                             </div>
                        <div>
                             {props.featuredCard.cardText}
-                            </div>
+                        </div>
+                        </div>
                             <div className={classes.link}>
                                     {props.featuredCard.linkName}
-                                </div>
+                            </div>
                     </div>
                 </Grid>
             </Grid>
