@@ -110,21 +110,21 @@ const cardElements = {
 
 const CarouselContent = {
   title: "What our partners say about us",
-  icon: <FormatQuoteIcon />,
+  icon: <FormatQuoteIcon style={{ fontSize: 42 }} />,
   data: [
     {
-      name: "Adam Dille",
-      title: "SVP of Product and Engineering",
+      name: "Adam Dille, SVP of Engineering",
+      employee_count: "381",
       company: "Quantum Metric",
       endorsement:
-        "...Overnight, DevSentient's product helped us move past many of those struggles so we could focus on solving business problems instead of scaling infrastructure. As a result, we've moved data products more quickly towards production, we've run analysis more cost-effectively than if we had built it ourselves, and we've even avoided hiring data engineers who we thought would be required to make all of this possible. The ROI from the product, as well as the valuable experience that the DevSentient team brings, has been clear from the day we signed on with them",
+        "Overnight, DevSentient's product helped us move past many struggles so we could focus on solving business problems instead of scaling infrastructure. As a result, we've moved data products more quickly towards production, we've run analysis more cost-effectively than if we had built it ourselves. [...] The ROI from the product, as well as the valuable experience that the DevSentient team brings, has been clear from the day we signed on with them. ",
     },
     {
-      name: "Andrew Wiebe",
-      title: "Chief Science Officer",
+      name: "Andrew Wiebe, Chief Science Officer",
+      employee_count: "9",
       company: "RiskThinking.AI",
       endorsement:
-        "With the help of the Hyperplane platform, we were able to massively scale our production pipelines, while working collaboratively to meet our product goals.",
+        "DevSentient has been a pleasure to work with and a valued resource, both as an application and as a knowledge base. With the help of the Hyperplane platform, we were able to massively scale our production pipelines, while working collaboratively to meet our product goals.",
     },
   ],
 };

@@ -11,17 +11,18 @@ const useStyles = makeStyles(theme => ({
         display: "flex",
         justifyContent: "space-between",
         flexDirection: "column",
-        height: "70%",
+        // height: "70%",
     } ,
     root: {
         width: "80%",
         height: "85vh",
-        padding: "30px 0",
+   
         margin: "auto",
         display: "flex",
         flexDirection: "row",
         [theme.breakpoints.up("md")]: {
             justifyContent: "space-evenly",
+            padding: "30px 0",
         },
         [theme.breakpoints.down("sm")]: {
             width: "90%",
@@ -33,6 +34,7 @@ const useStyles = makeStyles(theme => ({
         },
         [theme.breakpoints.down("sm")]: {
             width: "90%",
+            height: "auto",
         }
     },
     textDiv: {
@@ -42,7 +44,7 @@ const useStyles = makeStyles(theme => ({
 
         },
         [theme.breakpoints.down("md")]: {
-            width: "80%",
+            // width: "80%",
             margin: "auto",
             marginBottom: "35px"
         },

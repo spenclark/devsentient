@@ -5,7 +5,7 @@ import React from "react"
 const useStyles = makeStyles(theme => ({
     root: {
         width: "100%",
-        background: "#EEEEEE",
+        background: "#f6f3f0",
         margin: "auto"
     },
     titleDiv: {
