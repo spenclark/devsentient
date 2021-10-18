@@ -56,6 +56,9 @@ const useStyles = makeStyles(theme => ({
         [theme.breakpoints.down("md")]: {
             padding: `0 ${theme.spacing(6)}`
         },
+        [theme.breakpoints.down("xs")]: {
+            padding: `0 ${theme.spacing(2)}`
+        },
     },
     cardFeatureDiv: {
         background: theme.palette.primary.primaryWhite,

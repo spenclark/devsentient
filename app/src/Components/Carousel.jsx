@@ -9,7 +9,7 @@ import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 
      },
      whoItem: {
-        padding: "15px",
+        padding: "8px",
         margin: "0 10px",
         color: theme.palette.primary.main,
         [theme.breakpoints.down("md")]:{
@@ -32,7 +32,7 @@ import ArrowBackIcon from '@mui/icons-material/ArrowBack';
      },
      endorseDiv: { 
        fontSize: "16px",
-       height: "150px",
+       height: "110px",
        padding: "10px 3px",
        [theme.breakpoints.down("md")]:{
         height: "auto",
@@ -91,7 +91,7 @@ export default function Carousel({props}) {
         </p>
         <Grid container xs={11} sm={10}  className={classes.caroBox}>  
                         <Grid item container xs={12} sm={12} md={12}>
-                                <Grid item xs={12}>
+                                <Grid item xs={12} style={{color: "#3E0E40"}}>
                             {props.icon}
                             </Grid>
                         <Grid
@@ -138,15 +138,15 @@ export default function Carousel({props}) {
                                         )})}
                         </Grid>
                         </Grid>
-                        <Grid item item xs={12} sm={12} md={9} style={{display: "flex", justifyContent: "space-between", alignItems: "center", height: "65px"}}>
+                        <Grid item xs={12} sm={12} md={9} style={{display: "flex", justifyContent: "space-between", alignItems: "baseline", paddingTop: "12px", width: "100%"}}>
                                 <div style={{fontSize: "12px", fontWeight: "600",}}>
                                     {showcase + 1} / {dataArr.length}
                                 </div>
                                 <div style={{display: "flex", flexDirection: "row"}}> 
-                                    <button onClick={() => handleBack()} style={{background: "white", color: "#3E0E40", padding: "8px", marginRight: "10px", border: "none", borderRadius: "50%", display: "flex", justifyContent: "center", alignItems: "center"}}>
+                                    <button onClick={() => handleBack()} style={{background: "white", color: "#3E0E40", border: "1px dashed #3E0E40", padding: "8px", marginRight: "10px", borderRadius: "50%", display: "flex", justifyContent: "center", alignItems: "center"}}>
                                         <ArrowBackIcon style={{ fontSize: 18 }}  />
                                     </button>
-                                    <button onClick={() => handleForward()}  style={{background: "white", color: "#3E0E40", padding: "8px", border: "none", borderRadius: "100%", display: "flex", justifyContent: "center", alignItems: "center"}}>
+                                    <button onClick={() => handleForward()}  style={{background: "white", color: "#3E0E40", border: "1px dashed #3E0E40", padding: "8px", borderRadius: "100%", display: "flex", justifyContent: "center", alignItems: "center"}}>
                                         <ArrowForwardIcon style={{ fontSize: 18 }} />
                                     </button>
                                 </div>

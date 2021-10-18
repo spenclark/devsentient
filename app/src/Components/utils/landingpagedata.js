@@ -108,7 +108,7 @@ const cardElements = {
   },
 };
 
-const CarouselContent = {
+const carouselContent = {
   title: "What our partners say about us",
   icon: <FormatQuoteIcon style={{ fontSize: 42 }} />,
   data: [
@@ -129,10 +129,11 @@ const CarouselContent = {
   ],
 };
 
-const BottomContent = {
+const bottomContent = {
   title: "See DevSentient in action",
+
   subTitle:
-    "Learn how  can help you effortlessly onboard and manage your employees, whether you have a workforce of 1 or 1,000.",
+    "Learn how we can help you scale AI development, whether you have a workforce of 1 or 1,000.",
   LeftButton: {
     title: "Request demo",
     to: "/request-demo",
@@ -141,12 +142,18 @@ const BottomContent = {
     title: "See Pricing",
     to: "/",
   },
+  img: {
+    title: "Work with experts from",
+    src: "https://lh3.googleusercontent.com/pZpQSXFMWnpDA0XlcAkDxrd6bFrr2-D3Q44WLsigMLmCeQGhOniWf_AdnLSZz7wmlXcEeAJPh_BhYsh7RkqdllrKYupZvc5bg1E=w1064",
+    alt: "Work with experts from AT&T, GEORGIAN, BOREALIS AI, AMAZON AND DELOITTE",
+  },
 };
+
 // Must pump thru elements with html elements thru a function or method otherwise they will print thier type
 export {
   navigationText,
   heroText,
   cardElements,
-  CarouselContent,
-  BottomContent,
+  carouselContent,
+  bottomContent,
 };

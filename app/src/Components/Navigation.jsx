@@ -1,6 +1,6 @@
 import React from "react"
 import {makeStyles} from "@mui/styles"
-
+import {Grid} from "@mui/material"
 const useStyles = makeStyles(theme => ({
     navBar: {
         width: "100%",
@@ -42,7 +42,7 @@ const useStyles = makeStyles(theme => ({
         }
     },
     navItem: {
-        color: theme.palette.primary.secondaryWhite,
+        color: theme.palette.primary.primaryWhite,
         fontSize: "14px",
         fontWeight: "600",
         background: "transparent",
@@ -77,7 +77,7 @@ const useStyles = makeStyles(theme => ({
         },
     }
 }))
-export default function Navbar({props}) {
+export function Navbar({props}) {
 
     const classes = useStyles()
     const [firstLogo, secondLogo] = props.logoText.split(' ');
@@ -118,5 +118,30 @@ export default function Navbar({props}) {
                
             </div>
         </div>
+    )
+}
+
+export function Footer({props}) {
+    const classes = useStyles()
+    const [firstLogo, secondLogo] = props.logoText.split(' ');
+
+    return (
+        <Grid container className={classes.navBar}>
+            <Grid item xs={12}>
+                <div style={{textAlign: "center"}}>
+                        <h1 className={classes.logoTag}>
+                            <span className={classes.logoMain}>
+                                {firstLogo}
+                            </span>
+                            <span className={classes.logoSpan}>
+                                {secondLogo}
+                            </span>
+                        </h1>
+                    </div>
+            </Grid> 
+            <Grid item xs={12} style={{fontSize: "12px", color: "white", fontWeight: "600", textAlign: "center"}}>
+                © Copyright • DevSentient Inc. • <a href="/privacy" style={{color: "inherit"}}>Privacy Policy</a>
+            </Grid>
+        </Grid>
     )
 }
