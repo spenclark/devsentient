@@ -147,35 +147,45 @@ export default function Privacy() {
             </p>    
             
             <h3 style={{padding: "4px 0"}}>Use of Your Personal Data</h3>
+            <p style={{padding: "4px 0", fontSize: "14px"}}>
             The Company may use Personal Data for the following purposes:
-
+            </p>
             <ul>
            <li style={{padding: "4px 0", fontSize: "14px"}}>
            <span style={{fontWeight: "600"}}>To provide and maintain our Service,</span> including to monitor the usage of our Service.
            </li>
 
-       <li style={{padding: "4px 0", fontSize: "14px"}}><span style={{fontWeight: "600"}}>To manage Your Account:</span></li> to manage Your registration as a user of the Service. The Personal Data You provide can give You access to different functionalities of the Service that are available to You as a registered user.
-
-       <li style={{padding: "4px 0", fontSize: "14px"}}><span style={{fontWeight: "600"}}>For the performance of a contract:</span></li> the development, compliance and undertaking of the purchase contract for the products, items or services You have purchased or of any other contract with Us through the Service.
-<li style={{padding: "4px 0", fontSize: "14px"}}><span style={{fontWeight: "600"}}>To contact You:</span></li> To contact You by email, telephone calls, SMS, or other equivalent forms of electronic communication, such as a mobile application's push notifications regarding updates or informative communications related to the functionalities, products or contracted services, including the security updates, when necessary or reasonable for their implementation.
-
-            To provide You with news, special offers and general information about other goods, services and events which we offer that are similar to those that you have already purchased or enquired about unless You have opted not to receive such information.
-
-        <li style={{padding: "4px 0", fontSize: "14px"}}><span style={{fontWeight: "600"}}>    To manage Your requests:</span></li> To attend and manage Your requests to Us.
-
-       <li style={{padding: "4px 0", fontSize: "14px"}}><span style={{fontWeight: "600"}}>     For business transfers:</span></li> We may use Your information to evaluate or conduct a merger, divestiture, restructuring, reorganization, dissolution, or other sale or transfer of some or all of Our assets, whether as a going concern or as part of bankruptcy, liquidation, or similar proceeding, in which Personal Data held by Us about our Service users is among the assets transferred.
-
-   <li style={{padding: "4px 0", fontSize: "14px"}}><span style={{fontWeight: "600"}}>         For other purposes:</span></li> We may use Your information for other purposes, such as data analysis, identifying usage trends, determining the effectiveness of our promotional campaigns and to evaluate and improve our Service, products, services, marketing and your experience.
-            </ul>
+       <li style={{padding: "4px 0", fontSize: "14px"}}><span style={{fontWeight: "600"}}>To manage Your Account:</span> to manage Your registration as a user of the Service. The Personal Data You provide can give You access to different functionalities of the Service that are available to You as a registered user.
+       </li>
+       <li style={{padding: "4px 0", fontSize: "14px"}}><span style={{fontWeight: "600"}}>For the performance of a contract:</span> the development, compliance and undertaking of the purchase contract for the products, items or services You have purchased or of any other contract with Us through the Service.
+       </li>
+        <li style={{padding: "4px 0", fontSize: "14px"}}><span style={{fontWeight: "600"}}>To contact You:</span> To contact You by email, telephone calls, SMS, or other equivalent forms of electronic communication, such as a mobile application's push notifications regarding updates or informative communications related to the functionalities, products or contracted services, including the security updates, when necessary or reasonable for their implementation.
+            </li>
+            <li style={{padding: "4px 0", fontSize: "14px"}}>
+            <span style={{fontWeight: "600"}}>To provide You</span> with news, special offers and general information about other goods, services and events which we offer that are similar to those that you have already purchased or enquired about unless You have opted not to receive such information.
+            </li>
+        <li style={{padding: "4px 0", fontSize: "14px"}}><span style={{fontWeight: "600"}}>    To manage Your requests:</span> To attend and manage Your requests to Us.
+        </li>
+       <li style={{padding: "4px 0", fontSize: "14px"}}><span style={{fontWeight: "600"}}>     For business transfers:</span> We may use Your information to evaluate or conduct a merger, divestiture, restructuring, reorganization, dissolution, or other sale or transfer of some or all of Our assets, whether as a going concern or as part of bankruptcy, liquidation, or similar proceeding, in which Personal Data held by Us about our Service users is among the assets transferred.
+       </li>
+        <li style={{padding: "4px 0", fontSize: "14px"}}><span style={{fontWeight: "600"}}>         For other purposes:</span> We may use Your information for other purposes, such as data analysis, identifying usage trends, determining the effectiveness of our promotional campaigns and to evaluate and improve our Service, products, services, marketing and your experience.
+        </li>
+           </ul>
             <p style={{padding: "4px 0", fontSize: "14px"}}>We may share Your personal information in the following situations:</p>
 
             <ul>
-            <li style={{padding: "4px 0", fontSize: "14px"}}><span style={{fontWeight: "600"}}>With Service Providers:</span></li> We may share Your personal information with Service Providers to monitor and analyze the use of our Service, to contact You.
-            <li style={{padding: "4px 0", fontSize: "14px"}}><span style={{fontWeight: "600"}}>For business transfers:</span></li> We may share or transfer Your personal information in connection with, or during negotiations of, any merger, sale of Company assets, financing, or acquisition of all or a portion of Our business to another company.
-            <li style={{padding: "4px 0", fontSize: "14px"}}><span style={{fontWeight: "600"}}> With Affiliates:</span></li> We may share Your information with Our affiliates, in which case we will require those affiliates to honor this Privacy Policy. Affiliates include Our parent company and any other subsidiaries, joint venture partners or other companies that We control or that are under common control with Us.
-            <li style={{padding: "4px 0", fontSize: "14px"}}><span style={{fontWeight: "600"}}> With business partners:</span></li> We may share Your information with Our business partners to offer You certain products, services or promotions.
-            <li style={{padding: "4px 0", fontSize: "14px"}}><span style={{fontWeight: "600"}}>With other users:</span></li> when You share personal information or otherwise interact in the public areas with other users, such information may be viewed by all users and may be publicly distributed outside. If You interact with other users or register through a Third-Party Social Media Service, Your contacts on the Third-Party Social Media Service may see Your name, profile, pictures and description of Your activity. Similarly, other users will be able to view descriptions of Your activity, communicate with You and view Your profile.
-            <li style={{padding: "4px 0", fontSize: "14px"}}><span style={{fontWeight: "600"}}>With Your consent:</span></li> We may disclose Your personal information for any other purpose with Your consent.
+            <li style={{padding: "4px 0", fontSize: "14px"}}><span style={{fontWeight: "600"}}>With Service Providers:</span> We may share Your personal information with Service Providers to monitor and analyze the use of our Service, to contact You.
+            </li>
+            <li style={{padding: "4px 0", fontSize: "14px"}}><span style={{fontWeight: "600"}}>For business transfers:</span> We may share or transfer Your personal information in connection with, or during negotiations of, any merger, sale of Company assets, financing, or acquisition of all or a portion of Our business to another company.
+            </li>
+            <li style={{padding: "4px 0", fontSize: "14px"}}><span style={{fontWeight: "600"}}> With Affiliates:</span> We may share Your information with Our affiliates, in which case we will require those affiliates to honor this Privacy Policy. Affiliates include Our parent company and any other subsidiaries, joint venture partners or other companies that We control or that are under common control with Us.
+            </li>
+            <li style={{padding: "4px 0", fontSize: "14px"}}><span style={{fontWeight: "600"}}> With business partners:</span> We may share Your information with Our business partners to offer You certain products, services or promotions.
+            </li>
+            <li style={{padding: "4px 0", fontSize: "14px"}}><span style={{fontWeight: "600"}}>With other users:</span> when You share personal information or otherwise interact in the public areas with other users, such information may be viewed by all users and may be publicly distributed outside. If You interact with other users or register through a Third-Party Social Media Service, Your contacts on the Third-Party Social Media Service may see Your name, profile, pictures and description of Your activity. Similarly, other users will be able to view descriptions of Your activity, communicate with You and view Your profile.
+            </li>
+            <li style={{padding: "4px 0", fontSize: "14px"}}><span style={{fontWeight: "600"}}>With Your consent:</span> We may disclose Your personal information for any other purpose with Your consent.
+            </li>
             </ul>
 
             
@@ -219,13 +229,13 @@ export default function Privacy() {
             The Company may disclose Your Personal Data in the good faith belief that such action is necessary to:
             </p>
             <ul>
-                Comply with a legal obligation
-                Protect and defend the rights or property of the Company
-                Prevent or investigate possible wrongdoing in connection with the Service
-                Protect the personal safety of Users of the Service or the public
-                Protect against legal liability
-                Security of Your Personal Data
-                The security of Your Personal Data is important to Us, but remember that no method of transmission over the Internet, or method of electronic storage is 100% secure. While We strive to use commercially acceptable means to protect Your Personal Data, We cannot guarantee its absolute security.
+                <li style={{padding: "4px 0", fontSize: "14px"}}>Comply with a legal obligation</li>
+                <li style={{padding: "4px 0", fontSize: "14px"}}>Protect and defend the rights or property of the Company</li>
+                <li style={{padding: "4px 0", fontSize: "14px"}}>Prevent or investigate possible wrongdoing in connection with the Service</li>
+                <li style={{padding: "4px 0", fontSize: "14px"}}>Protect the personal safety of Users of the Service or the public</li>
+                <li style={{padding: "4px 0", fontSize: "14px"}}>Protect against legal liability</li>
+                <li style={{padding: "4px 0", fontSize: "14px"}}>Security of Your Personal Data</li>
+                <li style={{padding: "4px 0", fontSize: "14px"}}>The security of Your Personal Data is important to Us, but remember that no method of transmission over the Internet, or method of electronic storage is 100% secure. While We strive to use commercially acceptable means to protect Your Personal Data, We cannot guarantee its absolute security.</li>
             </ul>
             <h2 style={{padding: "7px 0", fontSize: "24px"}}>
             Children's Privacy
