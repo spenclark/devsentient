@@ -36,7 +36,7 @@ export const FormField = props => {
                 multiline={props.multiline}
                 variant={props.variant}
                 rows={props.rows}
-                InputLabelProps={{shrink: true,  style: { color: '#ffffff', fontWeight: "600", fontSize: "12px" },}}
+                InputLabelProps={props.inputProps}
                 // value={props.value[props.name]}
                 // onChange={props.handleChanges}
             >

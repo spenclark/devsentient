@@ -110,6 +110,9 @@ const formValuesShort = [
         variant: "filled",
         type: "email",
         data: [],
+        inputProps: {
+            shrink: true,  style: { color: '#ffffff', fontWeight: "600", fontSize: "12px" },
+        }
     },
 ]
 
@@ -147,7 +150,7 @@ export default function DemoForm({type}) {
                             multiline={data.multiline}
                             variant={data.variant}
                             rows={data.rows}
-                            InputLabelProps={true}
+                            InputLabelProps={data.inputProps}
                             disableUnderline={true}
                             // value={props.value[props.name]}
                             // onChange={props.handleChanges}

@@ -2,6 +2,7 @@ import React from "react"
 import {BrowserRouter as Router, Route} from "react-router-dom"
 // functional imports
 import Landing from "./Components/Landing"
+import Privacy from "./Components/Privacy"
 import RequestDemo from "./Components/RequestDemo"
 
 // the scope of the project is only 2 routes -- this router pattern is simplistic but effective for this person. If you want add subroutes just add a sub array!
@@ -16,7 +17,12 @@ export const routes = [
         usage: RequestDemo,
         exact: false,
         to: "/request-demo"
+    }, {
+        usage: Privacy,
+        exact: false,
+        to: "/privacy-policy"
     }
+
 ]
 
 
