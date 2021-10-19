@@ -1,7 +1,11 @@
 import React from "react"
+import { Navbar, Footer} from "./Navigation"
+import { navigationText } from "./utils/landingpagedata"
 
 export default function Privacy() {
     return (
+        <>
+        <Navbar props={navigationText}/>
         <div style={{margin: "auto", width: "80%", color: "black", padding: "15px 0"}}>
             <h2 style={{padding: "7px 0", fontSize: "24px"}}>Privacy Policy</h2>
             <p style={{padding: "4px 0", fontSize: "14px"}}>Last updated: April 21, 2021</p>
@@ -276,6 +280,7 @@ export default function Privacy() {
                 </li>
             </ul>
         </div>
-
+        <Footer  props={navigationText}/>
+    </>
     )
 }

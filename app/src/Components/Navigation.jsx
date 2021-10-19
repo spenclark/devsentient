@@ -139,7 +139,7 @@ export function Footer({props}) {
                         </h1>
                     </div>
             </Grid> 
-            <Grid item xs={12} style={{fontSize: "12px", color: "white", fontWeight: "600", textAlign: "center"}}>
+            <Grid item xs={12} style={{fontSize: "12px", color: "white", fontWeight: "400", textAlign: "center"}}>
                 © Copyright • DevSentient Inc. • <a href="/privacy-policy" style={{color: "inherit"}}>Privacy Policy</a>
             </Grid>
         </Grid>
