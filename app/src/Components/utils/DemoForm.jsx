@@ -18,6 +18,12 @@ const useStyles = makeStyles(theme => ({
         marginTop: "8px",
         padding: "20px 0"
     },
+    shortInput: {
+
+    },
+    longInput: {
+        
+    }
 }))
 const formValuesLong = [
     {

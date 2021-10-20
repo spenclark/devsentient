@@ -86,14 +86,16 @@ export function Navbar({props}) {
         <div className={classes.navBar}>
             <div className={classes.bar}>
                 <div>
-                    <h1 className={classes.logoTag}>
-                        <span className={classes.logoMain}>
-                            {firstLogo}
-                        </span>
-                        <span className={classes.logoSpan}>
-                            {secondLogo}
-                        </span>
-                    </h1>
+                    <a href="/" style={{textDecoration: "none"}}> 
+                        <h1 className={classes.logoTag}>
+                            <span className={classes.logoMain}>
+                                {firstLogo}
+                            </span>
+                            <span className={classes.logoSpan}>
+                                {secondLogo}
+                            </span>
+                        </h1>
+                    </a>
                 </div>
                 <div className={classes.navItems}>
                     <div style={{display: "flex", margin: "auto"}}>
@@ -108,9 +110,11 @@ export function Navbar({props}) {
                     <div className={classes.onboardingDiv}>
                     {props.onboardingItems.map((data) => {
                         return (
-                            <button className={classes.baseButton}>
-                                {data.title}
-                            </button>
+                            <a href="/request-demo" style={{textDecoration: "none"}}> 
+                                <button className={classes.baseButton}>
+                                    {data.title}
+                                </button>
+                            </a> 
                         )
                     })}
                     </div>
@@ -129,6 +133,7 @@ export function Footer({props}) {
         <Grid container className={classes.navBar}>
             <Grid item xs={12}>
                 <div style={{textAlign: "center"}}>
+                    <a href="/" style={{textDecoration: "none"}}> 
                         <h1 className={classes.logoTag}>
                             <span className={classes.logoMain}>
                                 {firstLogo}
@@ -137,6 +142,7 @@ export function Footer({props}) {
                                 {secondLogo}
                             </span>
                         </h1>
+                    </a>
                     </div>
             </Grid> 
             <Grid item xs={12} style={{fontSize: "12px", color: "white", fontWeight: "400", textAlign: "center"}}>
