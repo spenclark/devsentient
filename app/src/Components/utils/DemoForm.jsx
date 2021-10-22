@@ -16,14 +16,19 @@ const useStyles = makeStyles(theme => ({
         border: "none",
         borderRadius: "2px",
         marginTop: "8px",
-        padding: "20px 0"
+        height: "7vh"
+    },
+    shortRoot: {
+        background: "#7A5A7B",
+        borderRadius: "2px",
+        marginTop: "8px",
+        height: "7vh",
+        border: "1px solid #bfbfbf",
     },
     shortInput: {
-
+       
     },
-    longInput: {
-        
-    }
+    
 }))
 const formValuesLong = [
     {
@@ -32,18 +37,24 @@ const formValuesLong = [
         type: "text",
         name: "name",
         multiline: false,
+        sm: 12,
+        md: 12,
         data: [],
     },
     {
         placeholder: "Email Address",
         hiddenLabel: true,
         type: "text",
+        sm: 12,
+        md: 12,
         data: [],
     },
     {
         placeholder: "Company Name",
         hiddenLabel: true,
          type: "text",
+         sm: 12,
+         md: 12,
         data: [],
     },
     {
@@ -51,6 +62,8 @@ const formValuesLong = [
         label: "What best describes your organization?",
         select: true,
         variant: "filled",
+        sm: 6,
+        md: 6,
         data: [
             {
                 value: "We are just getting started with AI",
@@ -69,11 +82,15 @@ const formValuesLong = [
     {
         name: "phone_number",
         placeholder: "Phone Number",
+        sm: 6,
+        md: 6,
         type: "text",
         data: [],
     },
     {
         label: "How did you hear about us?",
+        sm: 12,
+        md: 12,
         value: "",
         name: "contact_moment",
         multiline: false,
@@ -115,10 +132,11 @@ const formValuesShort = [
         placeholder: "What’s your email?",
         variant: "filled",
         type: "email",
+        sm: 12,
         data: [],
         inputProps: {
-            shrink: true,  style: { color: '#ffffff', fontWeight: "600", fontSize: "12px" },
-        }
+            shrink: true,  style: { color: 'white', fontWeight: "600", fontSize: "12px" },
+        },
     },
 ]
 
@@ -140,31 +158,36 @@ export default function DemoForm({type}) {
     }, [type])
 
     return (
-        <Grid>
-            <Grid >
+        <Grid container item style={{margin: "auto"}} >
+            <Grid container item xs={12} >
             {formType.map(data => {
                     return(
-                        <FormField 
-                            hiddenLabel={data.hiddenLabel}
-                            label={data.label}
-                            type={data.type}
-                            name={data.name}
-                            select={data.select}
-                            data={data.data}
-                            sm={data.sm}
-                            placeholder={data.placeholder}
-                            multiline={data.multiline}
-                            variant={data.variant}
-                            rows={data.rows}
-                            InputLabelProps={data.inputProps}
-                            disableUnderline={true}
-                            // value={props.value[props.name]}
-                            // onChange={props.handleChanges}
-                        />
+                        <Grid Grid item xs={data.sm} md={data.md}>
+                            <FormField 
+                                hiddenLabel={data.hiddenLabel}
+                                label={data.label}
+                                type={data.type}
+                                name={data.name}
+                                select={data.select}
+                                data={data.data}
+                                sm={data.sm}
+                                md={data.md}
+                                placeholder={data.placeholder}
+                                multiline={data.multiline}
+                                variant={data.variant}
+                                rows={data.rows}
+                                inputProps={data.inputProps}
+                                disableUnderline={true}
+                                class={classes.shortRoot}
+                                inputClass={classes.shortInput}
+                                // value={props.value[props.name]}
+                                // onChange={props.handleChanges}
+                            />
+                        </Grid>
                         )
                 })}
                 </Grid>
-                <Grid> 
+                <Grid item xs={12} > 
                     <button className={classes.button}>
                         {type === false ? `Schedule Demo` : `See DevSentient`}
                     </button>
