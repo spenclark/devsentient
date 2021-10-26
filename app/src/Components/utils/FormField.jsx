@@ -1,12 +1,12 @@
 import React from "react"
-import { MenuItem, Grid, TextField, InputBase} from "@mui/material";
+import { MenuItem, Grid, TextField, InputBase, Select} from "@mui/material";
 
 export const FormField = props => {
     // reuseable form component
     return (
         <>
             {props.select === true ? 
-            <TextField
+            <Select
                 fullWidth
                 className={props.class}
                 hiddenLabel={props.hiddenLabel}
@@ -33,7 +33,7 @@ export const FormField = props => {
                         {option.label}
                     </MenuItem>
                 ))}
-            </TextField>
+            </Select>
            : 
            <InputBase
             fullWidth

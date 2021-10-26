@@ -49,7 +49,12 @@ const useStyles = makeStyles(theme => ({
         border: "transparent",
         padding: "10px 32px",
         [theme.breakpoints.down("xs")]: {
-            padding: "10px",        }
+            padding: "10px",        },
+       "&:hover": {
+              opacity: ".9",
+              transitionDelay: "80ms"
+            },
+            
     },
     onboardingDiv: {
         display: "flex",
@@ -73,7 +78,7 @@ const useStyles = makeStyles(theme => ({
         border: "none",
         "&:hover": {
             boxShadow: "0 7px 14px rgba(50, 50, 93, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08)",
-
+            opacity: ".9"
         },
     }
 }))

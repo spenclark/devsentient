@@ -21,14 +21,15 @@ const useStyles = makeStyles(theme => ({
     shortRoot: {
         background: "#7A5A7B",
         borderRadius: "2px",
-        marginTop: "8px",
         height: "7vh",
         border: "1px solid #bfbfbf",
     },
     shortInput: {
        
     },
-    
+    grid: {
+        padding: "8px",
+    }
 }))
 const formValuesLong = [
     {
@@ -158,11 +159,11 @@ export default function DemoForm({type}) {
     }, [type])
 
     return (
-        <Grid container item style={{margin: "auto"}} >
+        <Grid container item xs={11} sm={8} md={5} style={{margin: "auto"}} >
             <Grid container item xs={12} >
             {formType.map(data => {
                     return(
-                        <Grid Grid item xs={data.sm} md={data.md}>
+                        <Grid item xs={data.sm} md={data.md} className={classes.grid}>
                             <FormField 
                                 hiddenLabel={data.hiddenLabel}
                                 label={data.label}
