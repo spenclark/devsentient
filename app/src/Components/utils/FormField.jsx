@@ -6,7 +6,7 @@ export const FormField = props => {
     return (
         <>
             {props.select === true ? 
-            <Select
+            <TextField
                 fullWidth
                 className={props.class}
                 hiddenLabel={props.hiddenLabel}
@@ -33,7 +33,7 @@ export const FormField = props => {
                         {option.label}
                     </MenuItem>
                 ))}
-            </Select>
+            </TextField>
            : 
            <InputBase
             fullWidth

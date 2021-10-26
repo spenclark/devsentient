@@ -16,7 +16,11 @@ const useStyles = makeStyles(theme => ({
         border: "none",
         borderRadius: "2px",
         marginTop: "8px",
-        height: "7vh"
+        height: "7vh",
+        "&:hover": {
+            opacity: ".9",
+            transitionDelay: "80ms"
+        }
     },
     shortRoot: {
         background: "#7A5A7B",
