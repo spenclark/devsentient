@@ -20,7 +20,7 @@ const useStyles = makeStyles(theme => ({
         "&:hover": {
             opacity: ".9",
             transitionDelay: "80ms"
-        }
+        },
     },
     shortRoot: {
         background: "#7A5A7B",
@@ -163,11 +163,11 @@ export default function DemoForm({type}) {
     }, [type])
 
     return (
-        <Grid container item xs={11} sm={8} md={5} style={{margin: "auto"}} >
+        <Grid container item xs={12} style={{margin: "auto"}} >
             <Grid container item xs={12} >
             {formType.map(data => {
                     return(
-                        <Grid item xs={data.sm} md={data.md} className={classes.grid}>
+                        <Grid item xs={data.sm} md={data.md} className={type === false ? classes.grid : null}>
                             <FormField 
                                 hiddenLabel={data.hiddenLabel}
                                 label={data.label}

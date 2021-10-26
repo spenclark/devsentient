@@ -14,7 +14,7 @@ export default function RequestDemo() {
                         <p style={{fontWeight: "600", fontSize: "32px", color: "white", padding: "2px 0"}}>Learn how DevSentient can boost your business</p>
                         <p style={{ fontSize: "14px", color: "#eeeeee"}}>Schedule a 30-minute product demo with expert Q&A.</p>
                     </div> 
-                    <div style={{margin: "auto", width: "100%"}}>
+                    <div style={{margin: "auto", width: "50%"}}>
                             <DemoForm type={false} />
                     </div>
                  </div> 

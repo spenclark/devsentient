@@ -75,6 +75,7 @@ const useStyles = makeStyles(theme => ({
         margin: "12px 0"
         },
     formDiv: {
+        // width: "100%",
         [theme.breakpoints.up("md")]: {
             width: "280px",
         },
